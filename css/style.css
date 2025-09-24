@@ -1,0 +1,77 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+:root{
+	--corAmarela: #FBCA2D;
+	--corAzul: #17043B;
+	--corBranca: #FFFFFF;
+}
+
+.interface{
+	max-width: 1380px;
+	padding: 0 4%;
+	margin: 0 auto;
+}
+
+button{
+	background-color: transparent;
+	border: 2px solid var(--corBranca);
+	border-radius: 8px;
+	color: var(--corBranca);
+	cursor: pointer;
+	font-size: 1,1rem;
+	transition: .5s;
+
+
+}
+
+button:hover{
+	background-color: var(--corAmarela);
+	color: var(--corAzul);
+}
+
+/* Estilo do cabecario */
+header{
+	background-color: var(--corAzul);
+	padding: 16px 0;
+}
+
+header > .interface{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logotipo-cabecalho img{
+	max-width: 200px;
+
+}
+
+header nav.menu-desktop ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 56px;
+
+}
+
+header nav.menu-desktop a{
+	color: var(corBranca);
+	text-decoration: none;
+	font-size: 1.1rem;
+	transition: .5s;
+}
+
+header nav.menu-desktop a:hover{
+	color: var(--corBranca);
+}
+
+header nav.menu-desktop button{
+	width: 144px;
+	height: 48px;
+} 
